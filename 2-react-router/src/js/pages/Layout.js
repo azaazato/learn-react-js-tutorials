@@ -6,6 +6,8 @@ export default class Layout extends React.Component {
         this.props.history.replaceState(null, "/");
     }
     render() {
+        const { history } = this.props;
+        console.log(history.isActive("archives"));
         return (
             <div>
                 <h1>KillerNews.net</h1>
